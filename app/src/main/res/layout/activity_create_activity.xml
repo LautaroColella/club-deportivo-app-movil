@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/create_activity"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/btnCloseDialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/close"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/create_activity_name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/create_activity_desc"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/create_activity_teacher"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/create_activity_max"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_activity_day"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/create_activity_time"
+        android:inputType="time"/>
+
+    <CheckBox
+        android:id="@+id/cbSocios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/socio"
+        android:checked="true"
+        android:layout_marginTop="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbNoSocios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nosocio"
+        android:checked="true"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancelDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/btnSaveDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+</LinearLayout>
